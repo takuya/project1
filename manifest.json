@@ -1,0 +1,41 @@
+// {
+// 	"manifest_version": 2,
+
+// 	"name": "Hello World",
+// 	"description": "Hello Worldを表示",
+// 	"version": "1.0",
+// 	"permissions": ["declarativeWebRequest", "*://*/*" ],
+// 	"background": { "scripts": ["hello.js"] }
+
+// } 
+
+// {
+//   "name": "Cancel all requests",
+//   "version": "1.0",
+//   "description": "Uses a cancelling rule with an always true condition, which only applies in the ON_BEFORE_SEND_HEADERS stage.",
+//   "permissions": ["declarativeWebRequest", "*://*/*" ],
+//   "background": {
+//     "scripts": ["background.js"]
+//   },
+//   "manifest_version": 2
+// }
+// {
+//   "name": "Cancel all requests",
+//   "version": "1.0",
+//   "description": "Uses a cancelling rule with an always true condition, which only applies in the ON_BEFORE_SEND_HEADERS stage.",
+//   "permissions": ["declarativeWebRequest", "*://*/*" ],
+//   "background": {
+//     "scripts": ["hello.js"]
+//   },
+//   "manifest_version": 2
+// }
+{
+	"manifest_version": 2,
+
+	"name": "Hello World",
+	"description": "Hello Worldを表示",
+	"version": "1.0",
+	"permissions": ["declarativeWebRequest", "https://www.google.com/search*" ],
+	"background": { "scripts": ["hello.js"] }
+
+} 
